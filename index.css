@@ -1,0 +1,266 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    padding: 24px 48px;
+    background: black;
+}
+
+.nav-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 24px 32px;
+    background: rgba(193, 29, 29, 0.06);
+    backdrop-filter: blur(96px);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.16);
+}
+
+.nav-links, .nav-contact {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a, .nav-contact a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+
+.logo h1 {
+    font-family: 'Staatliches';
+    font-size: 42px;
+    line-height: 42px;
+    margin: 0;
+}
+
+.hero {
+    padding: 96px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 120px;
+    line-height: 120px;
+    max-width: 1344px;
+    margin: 0 auto 48px;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 28px;
+    margin: 0 auto;
+    background: black;
+}
+.hero-image img{
+    width: 100%;
+    padding: 82px;
+}
+
+.intro {
+    padding: 200px 0 96px;
+}
+
+.intro p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 64px;
+    line-height: 68px;
+    max-width: 1344px;
+    margin: 0 auto 96px;
+}
+
+.intro-image {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center; 
+    background: black;
+}
+
+.intro-image img {
+    width: 100%;
+    padding: 82px;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    max-width: 1344px;
+    margin: 0 auto;
+    
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.portfolio-item img {
+    width: 416px;
+    height: 277px;
+    object-fit: cover;
+}
+
+.portfolio-item h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.portfolio-item p {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.artist-statement {
+    padding: 48px;
+}
+
+.statement-container {
+    max-width: 1344px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.statement-container p {
+    grid-column: 2;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.testimonials {
+    padding: 48px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 48px;
+}
+
+.testimonials-container {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 0 48px 48px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.testimonials-container::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-card {
+    min-width: 288px;
+    padding: 24px;
+    border: 1.5px solid rgba(255, 255, 255, 0.24);;
+    border-radius: 16px;
+    background: black;
+    text-align: left;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.testimonial-header img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.testimonial-author h4 {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.testimonial-author p {
+    color: rgba(255, 255, 255, 0.60);;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.testimonial-content {
+    display: flex;
+    gap: 12px;
+    opacity: 0.8;
+}
+
+.quote-line {
+    width: 0;
+    border-left: 1.5px solid rgba(255, 255, 255, 0.16);;
+}
+
+.testimonial-content p {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+}
+
+footer {
+    padding: 96px 48px 24px;
+}
+
+.contact-button{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.contact-button:hover{
+    cursor: pointer;
+}
+
+.footer-container {
+    max-width: 1344px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container p {
+    color: rgba(255, 255, 255, 0.60);;
+    font-family: 'Red Hat Display', sans-serif;
+}
